@@ -84,6 +84,45 @@ body {
     color: #ff4444;
 }
 
+.input-group-text {
+    z-index: 10;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.bi-check-circle {
+    color: #28a745 !important;
+}
+
+.bi-exclamation-circle {
+    color: #dc3545 !important;
+}
+
+.bi-circle {
+    color: #6c757d !important;
+}
+
+.tooltip-inner {
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #333;
+}
+
+.alert-danger {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .badge.bg-success { background-color: #28a745 !important; }
 .badge.bg-warning { background-color: #ffc107 !important; color: #000 !important; }
 .badge.bg-danger { background-color: #dc3545 !important; }
